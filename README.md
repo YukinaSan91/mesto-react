@@ -1,70 +1,82 @@
-# Getting Started with Create React App
+# Проект: Место
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![mesto](https://github.com/YukinaSan91/mesto/blob/main/src/images/mesto.png)
+______________________
 
-## Available Scripts
+Данный проект реализовывает социальную сеть с возможностью добавлять свои фотографии, ставить лайки понравившимся фотографиям, добавлять и изменять информацию о себе.
 
-In the project directory, you can run:
+______________________
 
-### `npm start`
+### Основные методы и технологии
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+В проектной работе были использованы методы создания адаптивной верстки, такие как **медиазапросы @media**. Задача медиазапросов в этом прокте - адаптировать его под разрешения 1280 и 320.
+Так же для построения удобной галереи и контента с информацией использовались **Grid Layout** и **Flex**. Данные методы позволили сделать сайт визуально привлекательным на разных разрешениях.
+Основная задача проекта - сделать удобный интерфейс для обмена фотографиями, а так же настроить работу формы, изменение данных пользователя, открытие и закрытие форм, просмотр изображений в большом формате,. Проект разработам на основе **React**, что дает возможность более удобно разрабатывать и дополнять сайт.  добавление и удаление карточек,  отображение и счетчик лайков.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## HTML
+- Семантические теги;
 
-### `npm test`
+## CSS
+- Flexbox;
+- Grid Layout;
+- Затемнение;
+- Активное, неактивное состояние кнопок;
+- Адаптивная верстка с использованием медиа-запросов @media;
+- Позиционирование блоков и элементов;
+- БЭМ Nested;
+- Псевдоклассы;
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## JavaScript
+- JSX;
+- Модульные окна с формой;
+- ES6;
+- ООП;
+- Асинхронный код: промисы и HTTP-запросы;
+- API сервера Яндекс.Практикум;
+- Webpack;
 
-### `npm run build`
+## React
+- CRA(Create React APP) Версия **React** - 18.2.0.;
+- Хуки:
+    - Внутреннее состояние: хук **useState**,
+    - Эффекты: хук **useEffect**;
+- API сервера Яндекс.Практикум;
+- Props;
+- разметка реализована через JSX;
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+______________________
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Доработка проекта
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**Реализовать дополнительный функционал:** 
+- Валидация форм;
+- Счетчик лайков;
+- Возможность ставить и удалять лайк;
+- Добавление карточек;
+- Удаление карточек;
+- Изменение данных профиля пользователя;
 
-### `npm run eject`
+______________________
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Запуск проекта
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Для запуска проекта следуйте следующим инструкциям:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. Клонируйте репозиторий на свой компьютер 
+2. Установите пакеты NPM
+```
+npm install
+```
+3. Запустить приложение
+```
+npm start
+```
+Если приложение не запустилось автоматически в браузере, откройте его самостоятельно - http://localhost:3000
+Все изменения будут отображаться на странице автоматически.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+______________________
 
-## Learn More
+### Ссылка на проект:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+https://yukinasan91.github.io/mesto-react/
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
