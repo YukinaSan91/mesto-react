@@ -21,18 +21,15 @@ function Main({onEditProfile, onAddPlace, onEditAvatar, onCardClick}) {
       .catch((err) => {
         console.log(err);
       })
-    })
-
-    useEffect(() => {
-      api
-        .getInitialCards(cards)
-        .then((card) => {
-          setCards(card);
-        })
-        .catch((err) => {
-          console.log(err);
-        })
+    api
+      .getInitialCards(cards)
+      .then((card) => {
+        setCards(card);
       })
+      .catch((err) => {
+        console.log(err);
+      })
+    }, []);
 
   return (
     <main className="content">

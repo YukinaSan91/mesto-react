@@ -46,7 +46,7 @@ function App() {
           onCardClick={handleCardClick}
         />
         <Footer />
-        <PopupWithForm name="edit" title="Редактировать профиль" isOpen={isEditProfilePopupOpen} onClose={closeAllPopups}>
+        <PopupWithForm name="edit" title="Редактировать профиль" buttonText="Сохранить" isOpen={isEditProfilePopupOpen} onClose={closeAllPopups}>
           <input
             id="input-name"
             className="popup__text popup__text_type_name"
@@ -67,9 +67,8 @@ function App() {
             maxLength="200"
             required/>
           <span className="input-job-error popup__text-input-error" type="text"></span>
-          <button className="popup__save-button" type="submit">Сохранить</button>
         </PopupWithForm>
-        <PopupWithForm name="add" title="Новое место" isOpen={isAddPlacePopupOpen} onClose={closeAllPopups}>
+        <PopupWithForm name="add" title="Новое место" buttonText="Создать" isOpen={isAddPlacePopupOpen} onClose={closeAllPopups}>
           <input
             id="input-title"
             className="popup__text popup__text_type_title"
@@ -88,9 +87,8 @@ function App() {
             placeholder="Ссылка на картинку"
             required/>
           <span className="input-url-error popup__text-input-error" type="text"></span>
-          <button className="popup__save-button" type="submit">Создать</button>
         </PopupWithForm>
-        <PopupWithForm name="avatar" title="Обновить аватар" isOpen={isEditAvatarPopupOpen} onClose={closeAllPopups}>
+        <PopupWithForm name="avatar" title="Обновить аватар" buttonText="Сохранить" isOpen={isEditAvatarPopupOpen} onClose={closeAllPopups}>
           <input
             id="input-avatar"
             className="popup__text popup__text_type_url-avatar"
@@ -99,11 +97,8 @@ function App() {
             placeholder="Ссылка на картинку"
             required/>
           <span className="input-avatar-error popup__text-input-error" type="text"></span>
-          <button className="popup__save-button" type="submit">Сохранить</button>
         </PopupWithForm>
-        <PopupWithForm name="del-card" title="Вы уверены?" onClose={closeAllPopups}>
-          <button className="popup__save-button" type="submit">Да</button>
-        </PopupWithForm>
+        <PopupWithForm name="del-card" title="Вы уверены?" buttonText="Да" onClose={closeAllPopups}/>
         <ImagePopup card={selectedCard} onClose={closeAllPopups}/>
       </div>
     </div>
