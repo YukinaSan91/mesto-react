@@ -78,4 +78,4 @@ ______________________
 
 ### Ссылка на проект:
 
-
+https://yukinasan91.github.io/mesto-react/
