@@ -1,0 +1,10 @@
+.element__info {
+  margin: 0 auto;
+  padding: 19px 0 25px 0;
+  max-width: 246px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}

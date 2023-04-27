@@ -1,0 +1,6 @@
+.popup__text_type_error {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 14px;
+  border-bottom: 1px solid red;
+}

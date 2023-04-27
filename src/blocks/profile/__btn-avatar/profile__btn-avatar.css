@@ -1,0 +1,23 @@
+.profile__btn-avatar {
+  margin: 0;
+  padding: 0;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-image: url(../../../images/Cursor.svg);
+  background-size: 26px;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  opacity: 0;
+  border: 0;
+  background-color: transparent;
+  object-fit: cover;
+  transition: opacity .5s linear;
+  cursor: pointer;
+}
+
+.profile__btn-avatar:hover {
+  opacity: .8;
+  background-color: #000;
+}
