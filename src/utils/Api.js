@@ -71,7 +71,7 @@ class Api {
     .then(this._checkingResponse);
   };
 
-  addLikeCard(cardId) {
+  _addLikeCard(cardId) {
     return fetch(`${this._baseUrl}cards/${cardId}/likes`, {
       method: 'PUT',
       headers: this._headers,
@@ -79,12 +79,16 @@ class Api {
     .then(this._checkingResponse);
   };
 
-  deleteLikeCard(cardId) {
+  _deleteLikeCard(cardId) {
     return fetch(`${this._baseUrl}cards/${cardId}/likes`, {
       method: 'DELETE',
       headers: this._headers,
     })
     .then(this._checkingResponse);
+  };
+
+  toggleCardLike(cardId, isLiked) {
+    return isLiked ? this._addLikeCard(cardId) : this._deleteLikeCard(cardId);
   };
 }
 
