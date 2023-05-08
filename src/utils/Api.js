@@ -28,24 +28,24 @@ class Api {
     .then(this._checkingResponse);
   };
 
-  editUserProfile(data) {
+  editUserProfile({name, about}) {
     return fetch(`${this._baseUrl}users/me`, {
       method: 'PATCH',
       headers: this._headers,
       body: JSON.stringify({
-        name: data.forename,
-        about: data.job,
+        name: name,
+        about: about,
       }),
     })
     .then(this._checkingResponse);
   };
 
-  editUserAvatar(data) {
+  editUserAvatar(avatar) {
     return fetch(`${this._baseUrl}users/me/avatar`, {
       method: 'PATCH',
       headers: this._headers,
       body: JSON.stringify({
-        avatar: data.avatar,
+        avatar,
       }),
     })
     .then(this._checkingResponse);
