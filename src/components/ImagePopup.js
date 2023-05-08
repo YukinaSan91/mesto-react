@@ -1,4 +1,8 @@
+import usePopupClose from "../hooks/usePopupClose";
+
 function ImagePopup({card, onClose}) {
+  usePopupClose(card, onClose)
+
   return (
     <div className={`popup popup_type_image ${(Object.keys(card).length!==0) ? `popup_opened` : ""}`}>
       <div className="popup__card-image">
